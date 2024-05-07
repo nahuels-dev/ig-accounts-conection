@@ -1,0 +1,25 @@
+{
+  "name": "ig-accounts-connection",
+  "version": "1.0.0",
+  "description": "Automatically connect and subscribe to hooks to send and receive messages from instagram bussines (automatic replies with IA)",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+  },
+  "author": "Nahuel Silva",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.40.0",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "openai": "^4.29.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.3"
+  }
+}
